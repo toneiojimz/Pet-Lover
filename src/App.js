@@ -9,10 +9,9 @@ import styled from 'styled-components';
 
 
 const Page = styled.div`
-  width:100vh;
-  heigth: 100vh:
-  display: flex:
-  justify-content: space-around;
+  width:100%;
+  heigth: 90vh:
+ 
 `;
 
 const Image= styled.img`
@@ -21,10 +20,13 @@ const Image= styled.img`
 `;
 
 const Middle = styled.div`
+  width: 100%;
+  height: 100vh;
   display: flex;
   justify-content: space-around;
-  margin: 30px;
+  // margin: 30px;
   align-items:center;
+  background-color: papayawhip;
 `;
 
 const Or =styled.p`
@@ -67,7 +69,6 @@ return(
       <Or>Or</Or>
       <Image src={Perro} Alt="dog picture"/>
     </Middle>
-    <H2>Click a link above to see a Cat or Dog</H2>
   </Page>
   )
 }
