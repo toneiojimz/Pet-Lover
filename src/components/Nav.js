@@ -33,9 +33,9 @@ function Nav(){
 
         <MyNav>
             <Links>
-                <Link style={{ textDecoration: 'none' }} to="/"><a>HOME</a></Link>
-                <Link style={{ textDecoration: 'none' }} to="/dog"><a>DOG</a></Link>
-                <Link style={{ textDecoration: 'none' }} to="cat"><a>CAT</a></Link>
+                <Link style={{ textDecoration: 'none' }} to="/">HOME</Link>
+                <Link style={{ textDecoration: 'none' }} to="/dog">DOG</Link>
+                <Link style={{ textDecoration: 'none' }} to="/cat">CAT</Link>
                     
                     
                     
