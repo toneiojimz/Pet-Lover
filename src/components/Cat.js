@@ -9,7 +9,7 @@ const H2= styled.h2`
  font-size: 4rem;
 `;
 
-const DogImg = styled.img`
+const CatImg = styled.img`
     display:flex;
     max-width: 600px;
     max-height: 450px;
@@ -18,9 +18,11 @@ const DogImg = styled.img`
 const Imgdiv= styled.div`
     display: flex;
     justify-content:center;
+    max-width: 100vh;
+    max-height: 100vh;
 `;
 
-const DogPage=styled.div`
+const CatPage=styled.div`
     background-color: #C2E7DA;
     height: 100vh;
     margin-top:-20px;
@@ -59,19 +61,18 @@ function Cat(){
     },[])
 
    const  handleClick= ()=>{
-      
         window.location.reload(false);
     }
     
 
     return(
-        <DogPage>
+        <CatPage>
             <H2>Meow lover?</H2>
             <Imgdiv> 
-                 <DogImg src={cat.file} alt="random cat picture"/>
+                <CatImg src={cat.file} alt="random cat picture"/>
             </Imgdiv>
-             <Button onClick={handleClick}>More Meow</Button>
-        </DogPage>
+            <Button onClick={handleClick}>More Meow</Button>
+        </CatPage>
     )
 }
 

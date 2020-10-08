@@ -10,21 +10,21 @@ const MyNav = styled.nav`
     min-height: 8vh;
     background: skyblue;
     color: black;
+    text-decoration: none;
 `;
 
-const Links = styled.ul`
+const Links = styled.div`
     width: 40%
     display: flex;
     justify-content: space-around;
     align-items: center;
     list-style: none;
+    text-decoration: none;
    
 
 `;
 
-const Linked = styled.li`
-    text-decoration: none;
-`;
+
 
 
 function Nav(){
@@ -33,15 +33,13 @@ function Nav(){
 
         <MyNav>
             <Links>
-                <Link to="/">
-                    <Linked>Home</Linked>
-                </Link>
-                 <Link to="/dog">
-                    <Linked>Dog</Linked>
-                </Link>
-                <Link to="cat">
-                    <Linked>Cat</Linked>
-                </Link>
+                <Link style={{ textDecoration: 'none' }} to="/"><a>HOME</a></Link>
+                <Link style={{ textDecoration: 'none' }} to="/dog"><a>DOG</a></Link>
+                <Link style={{ textDecoration: 'none' }} to="cat"><a>CAT</a></Link>
+                    
+                    
+                    
+                
             </Links>
 
         </MyNav>

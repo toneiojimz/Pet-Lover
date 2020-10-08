@@ -14,6 +14,8 @@ const DogImg = styled.img`
     max-width: 600px;
     max-height: 450px;
     padding: 20px;
+    
+    
 `;
 const Imgdiv= styled.div`
     display: flex;
@@ -27,6 +29,10 @@ const DogPage=styled.div`
     display:flex;
     flex-direction column;
     align-items: center;
+
+    @media(max-width: 500px;){
+        width:50vh;
+    }
     
 `;
 
@@ -37,6 +43,8 @@ const Button= styled.button`
     background-color:orange;
     font-size: 2rem;
     border-radius:7px;
+
+    
 `;
 
 
